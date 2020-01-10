@@ -1,4 +1,4 @@
-package com.spring.demo.sidebyside.todo;
+package com.spring.demo.sidebyside.controller;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.spring.demo.sidebyside.entity.ToDo;
 import com.spring.demo.sidebyside.repository.ToDoRepository;
 
 @RestController

@@ -1,4 +1,4 @@
-package com.spring.demo.sidebyside.todo;
+package com.spring.demo.sidebyside.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
