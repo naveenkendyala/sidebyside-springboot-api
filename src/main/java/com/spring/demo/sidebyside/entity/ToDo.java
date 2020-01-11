@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TODO")
+@Table(name="ToDo")
 public class ToDo {
 
 	//Use @GeneratedValue for automatically generating the Id

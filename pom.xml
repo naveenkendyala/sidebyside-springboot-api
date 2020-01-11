@@ -60,9 +60,10 @@
 
 		<plugins>
 			<!-- The plugin provides several goals to work with a Spring Boot application: 
-				repackage: create a jar or war file that is auto-executable. It can replace 
+				#repackage: create a jar or war file that is auto-executable. It can replace 
 				the regular artifact or can be attached to the build lifecycle with a separate 
-				classifier. -->
+				classifier. 
+			-->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
