@@ -2,7 +2,7 @@
 mvn clean package
 
 echo "*****************************************************************************"
-docker build -f src/main/docker/jvm.dockerfile -t springboot/springboot-jpa-api-jvm:$1 .; 
+docker build -f src/main/build/docker/jvm.dockerfile -t springboot/springboot-jpa-api-jvm:$1 .; 
 
 
 echo "*****************************************************************************"
