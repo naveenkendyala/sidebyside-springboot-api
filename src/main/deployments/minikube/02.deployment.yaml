@@ -21,6 +21,8 @@ spec:
         envFrom:
         - configMapRef:
             name: springboot-jpa-api-jvm-cm
+        - secretRef:
+            name: springboot-jpa-api-jvm-secret
         ports:
         - containerPort: 8080
         resources:
