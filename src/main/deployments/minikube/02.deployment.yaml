@@ -26,10 +26,24 @@ spec:
         ports:
         - containerPort: 8080
         resources:
-          limits:
-            cpu: 200m
-            memory: 175Mi
           requests:
-            cpu: 200m
+            cpu: 100m
             memory: 175Mi
+          limits:
+            cpu: 300m
+            memory: 350Mi
+        livenessProbe:
+          httpGet:
+              port: 8080
+              path: /applive
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 2          
+        readinessProbe:
+          httpGet:
+            path: /appready
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 10
 status: {}
+

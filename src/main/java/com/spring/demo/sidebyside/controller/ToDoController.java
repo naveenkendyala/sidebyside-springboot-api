@@ -29,6 +29,16 @@ public class ToDoController {
 		todoRepository.save(todo);
 		return todoRepository.findAll();
 	}
+
+	@GetMapping("/applive")
+	public String liveCheck() {
+		return "OK";
+	}
+
+	@GetMapping("/appready")
+	public String healthCheck() {
+		return "OK";
+	}
 	
 //Using CrudRepository	
 //	@GetMapping("/todos")
