@@ -36,14 +36,14 @@ spec:
           httpGet:
               port: 8080
               path: /applive
-          initialDelaySeconds: 5
-          periodSeconds: 10
+          initialDelaySeconds: 30
+          periodSeconds: 30
           timeoutSeconds: 2          
         readinessProbe:
           httpGet:
             path: /appready
             port: 8080
           initialDelaySeconds: 5
-          periodSeconds: 10
+          periodSeconds: 30
 status: {}
 
