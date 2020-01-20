@@ -31,8 +31,8 @@ public class ToDoController {
 	}
 
 	@GetMapping("/applive")
-	public String liveCheck() {
-		return "OK";
+	public List<ToDo> liveCheck() {
+		return todoRepository.findAll();
 	}
 
 	@GetMapping("/appready")
